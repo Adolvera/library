@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --header-dark: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  color: #FFFFFF;
+  background-color: var(--header-dark);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  padding-right: 100px;
+  box-shadow: 0px 2px 2px black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header :first-child {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+header :last-child {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #4a4a4a;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 2px black;
+}
+
+header :last-child:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex button {
+  padding: 15px 15px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: #FFFFFF;
+  margin: 20px 0px;
+  box-shadow: 2px 5px 0px #141414;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: black;
+  width: 300px;
+  align-items: center;
+  margin: 20px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.card button {
+  width: 250px;
+  margin: 10px 0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  box-shadow: 2px 5px 5px #8a8a8a;
+}
+
+.author-text {
+  font-weight: 700;
+}
+
+.title-text {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#read-button {
+  background-color: #de3737;
+}
+
+#remove-button {
+  background-color: var(--header-dark);
+  color: #FFFFFF;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px #1c1c1c;
+  transform: translate(0, -125%);
+  color: black;
+  background-color: #bfbfbf;
+  padding: 10px 25px;
+  padding-bottom: 20px;
+  width: 20vw;
+}
+
+.add-book-form h3 {
+  font-size: 1.5em;
+}
+
+.add-book-form button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3em;
+}
+
+.add-book-form label {
+  font-weight: 700;
+}
+
+input {
+  padding: 10px 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+}
+
+input::placeholder {
+  font-size: 1.3em;
+}
+
+input:focus {
+  outline: none !important;
+  border: 3px solid #696969;
+}
+
+.form-div {
+  visibility: hidden;
+}
+
+.form-div-visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-book-form div.flex :first-child {
+  width: 250px;
+}
