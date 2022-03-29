@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 :root {
   --header-dark: #1a1a1a;
@@ -116,7 +117,7 @@ button:hover {
   gap: 15px;
   border-radius: 10px;
   box-shadow: 3px 5px 5px #1c1c1c;
-  transform: translate(0, -125%);
+  transform: translate(0, -100%);
   color: black;
   background-color: #bfbfbf;
   padding: 10px 25px;
@@ -158,6 +159,25 @@ input:focus {
 
 .form-div {
   visibility: hidden;
+}
+
+.error {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #ff0000;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.error-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .form-div-visible {

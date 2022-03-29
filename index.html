@@ -7,6 +7,7 @@
   <title>Library</title>
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
+  <link rel="icon" href="img/open-book.png">
 </head>
 <body>
   <header>
@@ -31,12 +32,12 @@
       <h3>Add New Book</h3>
       <input type="text" id="title" placeholder="Title" name="book_title" minlength="1" maxlength="100">
       <input type="text" id="author" placeholder="Author" name="book_author" minlength="1" maxlength="50">
-      <input type="number" name="page-amount" id="pages" placeholder="# of Pages" min="1" max="10000" value="0">
-      <div class="flex">
+      <input type="number" name="page-amount" id="pages" placeholder="# of Pages" max="10000" value="0">
+      <div class="flex" id="checkbox-div">
         <label for="read">Have you read it?</label>
         <input type="checkbox" name="read" id="read">
       </div>
-      <button type="submit">Submit</button>
+      <button type="button">Submit</button>
     </form>
   </div>
 </body>
