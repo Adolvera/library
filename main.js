@@ -105,7 +105,7 @@ const showBooks = (array) => {
   pAuthor.textContent = `${bookArray[length].author}`
 
   const pPage = document.createElement("p");
-  pPage.textContent = `${bookArray[length].pages}`
+  pPage.textContent = `${bookArray[length].pages} pages`
 
   const readButton = document.createElement("button");
 
@@ -137,6 +137,7 @@ const showBooks = (array) => {
 
 //Submit form validation
 const checkValid = (title, author, pages) => {
+  let pageNumber = parseInt(pages);
   const repeatName = bookArray.some(book => book.title === title);
   errorDiv.classList.add("form-div");
   if (title === "") {
@@ -154,6 +155,10 @@ const checkValid = (title, author, pages) => {
   } else if (pages === "0" || pages === "") {
     errorMessage.textContent = "Please insert amount of pages"
     errorDiv.classList.remove("form-div");
+    return false;
+  } else if (pageNumber >= 10000) {
+    errorMessage.textContent = "Page limit reached!"
+    errorDiv.classList.remove('form-div');
     return false;
   }
 
