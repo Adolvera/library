@@ -13,6 +13,7 @@ body {
   color: #FFFFFF;
   background-color: var(--header-dark);
   height: 100vh;
+  position: relative;
 }
 
 header {
@@ -32,6 +33,7 @@ a {
 header :first-child {
   font-size: 32px;
   font-weight: 700;
+  font-family: "Oswald";
 }
 
 header :last-child {
@@ -70,6 +72,12 @@ button:hover {
   transform: scale(1.05)
 }
 
+.book-list {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -99,15 +107,23 @@ button:hover {
 .title-text {
   font-weight: 700;
   font-size: 1.5em;
+  font-family: "Oswald";
 }
 
-#read-button {
+.unread-button {
   background-color: #de3737;
+  font-family: "Oswald";
 }
 
-#remove-button {
+.read-button {
+  background-color: #0aad36;
+  font-family: "Oswald";
+}
+
+.remove-button {
   background-color: var(--header-dark);
   color: #FFFFFF;
+  font-family: "Oswald";
 }
 
 .add-book-form {
@@ -117,16 +133,16 @@ button:hover {
   gap: 15px;
   border-radius: 10px;
   box-shadow: 3px 5px 5px #1c1c1c;
-  transform: translate(0, -100%);
   color: black;
   background-color: #bfbfbf;
   padding: 10px 25px;
   padding-bottom: 20px;
-  width: 20vw;
+  width: 25vw;
 }
 
 .add-book-form h3 {
   font-size: 1.5em;
+  font-family: "Oswald";
 }
 
 .add-book-form button {
@@ -188,4 +204,12 @@ input:focus {
 
 .add-book-form div.flex :first-child {
   width: 250px;
+}
+
+#div-form {
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  transform: translate(0, 30%);
 }
