@@ -10,7 +10,8 @@ const formDiv = document.querySelector("#div-form");
 const checkboxDiv = formData.querySelector("#checkbox-div");
 const bookList = document.querySelector(".book-list");
 const readButtons = document.querySelector(".read-unread");
-const removeButtons = document.querySelector(".remove-button")
+const removeButtons = document.querySelector(".remove-button");
+const closeButton = formData.querySelector("button[type='reset'");
 
 //Event Listeners for submit and form buttons
 submitButton.addEventListener('click', (e) => {
@@ -22,6 +23,8 @@ submitButton.addEventListener('click', (e) => {
 })
 
 addBookButton.addEventListener('click', (e) => toggleForm());
+
+closeButton.addEventListener('click', () => toggleForm());
 
 let bookArray = [];
 

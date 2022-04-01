@@ -144,6 +144,17 @@ button:hover {
 .add-book-form h3 {
   font-size: 1.5em;
   font-family: "Oswald";
+  margin: 0;
+}
+
+#close {
+  margin: 0;
+  align-self: flex-end;
+  justify-self: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 2px 5px;
+  background-color: #bfbfbf;
 }
 
 .add-book-form button {
